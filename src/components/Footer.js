@@ -15,7 +15,7 @@ export default function Footer() {
 							fontSize: 46,
 						}}
 					>
-						Moschino
+						E-Commerce
 					</h1>
 					<a target="blank" href="https://www.wowthemes.net/">
 						© Moschino - Free HTML Template by WowThemes.net

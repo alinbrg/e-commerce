@@ -5,10 +5,10 @@ export default function Header() {
 			<div className="site-branding">
 				<h1 className="site-title">
 					<a href="index.html" rel="home">
-						Moschino
+						E-Commerce
 					</a>
 				</h1>
-				<h2 className="site-description">Minimalist Portfolio HTML Template</h2>
+				<h2 className="site-description">Shop Site</h2>
 			</div>
 			<nav id="site-navigation" className="main-navigation">
 				<button className="menu-toggle">Menu</button>

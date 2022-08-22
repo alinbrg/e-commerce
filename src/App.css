@@ -786,7 +786,7 @@ p.demo_store a {
 .woocommerce .woocommerce-error:before,
 .woocommerce .woocommerce-info:before,
 .woocommerce .woocommerce-message:before {
-	font-family: WooCommerce;
+	/* font-family: WooCommerce; */
 	content: "\e028";
 	display: inline-block;
 	position: absolute;
@@ -1218,7 +1218,7 @@ p.demo_store a {
 	line-height: 1;
 	cursor: pointer;
 	position: relative;
-	font-family: inherit;
+	/* font-family: inherit; */
 	text-decoration: none;
 	overflow: visible;
 	padding: 0.618em 1em;
@@ -1246,7 +1246,7 @@ p.demo_store a {
 .woocommerce a.button.loading:after,
 .woocommerce button.button.loading:after,
 .woocommerce input.button.loading:after {
-	font-family: WooCommerce;
+	/* font-family: WooCommerce; */
 	content: "\e01c";
 	vertical-align: top;
 	-webkit-font-smoothing: antialiased;
@@ -1262,7 +1262,7 @@ p.demo_store a {
 .woocommerce a.button.added:after,
 .woocommerce button.button.added:after,
 .woocommerce input.button.added:after {
-	font-family: WooCommerce;
+	/* font-family: WooCommerce; */
 	content: "\e017";
 	margin-left: 0.53em;
 	vertical-align: bottom;
@@ -1464,7 +1464,7 @@ p.demo_store a {
 	line-height: 1;
 	font-size: 1em;
 	width: 5.4em;
-	font-family: star;
+	/* font-family: star; */
 }
 .woocommerce .star-rating:before {
 	content: "\73\73\73\73\73";
@@ -1552,7 +1552,7 @@ p.demo_store a {
 	width: 1em;
 	height: 1em;
 	line-height: 1;
-	font-family: WooCommerce;
+	/* font-family: WooCommerce; */
 	text-indent: 0;
 }
 .woocommerce table.shop_attributes td,
@@ -1947,7 +1947,7 @@ p.demo_store a {
 	line-height: 1;
 	content: "";
 	color: #a00;
-	font-family: WooCommerce;
+	/* font-family: WooCommerce; */
 	speak: none;
 	font-variant: normal;
 	text-transform: none;
@@ -2066,7 +2066,7 @@ p.demo_store a {
 	padding-left: 0;
 }
 .woocommerce-account ul.digital-downloads li:before {
-	font-family: WooCommerce;
+	/* font-family: WooCommerce; */
 	speak: none;
 	font-weight: 400;
 	font-variant: normal;
@@ -2128,7 +2128,7 @@ p.demo_store a {
 	.cart-collaterals
 	.shipping_calculator
 	.shipping-calculator-button:after {
-	font-family: WooCommerce;
+	/* font-family: WooCommerce; */
 	speak: none;
 	font-weight: 400;
 	font-variant: normal;
@@ -5067,7 +5067,7 @@ address {
 }
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	/* font-family: "Courier 10 Pitch", Courier, monospace; */
 	font-size: 15px;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -5364,7 +5364,7 @@ a:focus {
 	text-align: center;
 }
 .site-title {
-	font-family: "Quattrocento Sans", sans-serif;
+	/* font-family: "Quattrocento Sans", sans-serif; */
 	font-size: 60px;
 	font-weight: 300;
 	letter-spacing: 2px;
@@ -5606,7 +5606,7 @@ a:focus {
 .widget_pages ul li:before,
 .widget_recent_entries ul li:before {
 	content: "\f105";
-	font-family: FontAwesome;
+	/* font-family: FontAwesome; */
 	margin-right: 5px;
 }
 .widget a {
@@ -6084,7 +6084,7 @@ html[xmlns] .slides {
 	cursor: default;
 }
 .flex-direction-nav a:before {
-	font-family: "Genericons";
+	/* font-family: "Genericons"; */
 	font-size: 40px;
 	line-height: 1;
 	display: inline-block;
@@ -6108,7 +6108,7 @@ html[xmlns] .slides {
 	color: #000;
 }
 .flex-pauseplay a:before {
-	font-family: "flexslider-icon";
+	/* font-family: "flexslider-icon"; */
 	font-size: 20px;
 	display: inline-block;
 	content: "\f004";
@@ -6298,7 +6298,7 @@ a:hover.button {
 /*--------------------------------------------------------------15.5 Icons--------------------------------------------------------------*/
 .genericon {
 	display: inline-block;
-	font-family: "Genericons";
+	/* font-family: "Genericons"; */
 	font-size: 32px;
 	font-style: normal;
 	font-weight: normal;
@@ -6766,7 +6766,7 @@ ul.shortcode-archive li {
 }
 .shortcode-archive-title:before {
 	content: "\f436";
-	font-family: "Genericons";
+	/* font-family: "Genericons"; */
 }
 .shortcode-archive-title {
 	text-transform: uppercase;
@@ -7187,7 +7187,7 @@ form.comment-form {
 }
 /* CUSTOM STYLE */
 body {
-	font-family: "Roboto";
+	/* font-family: "Roboto"; */
 }
 h1,
 h2,
@@ -7195,22 +7195,22 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Oswald";
+	/* font-family: "Oswald"; */
 }
 .site-title {
-	font-family: "Herr Von Muellerhoff";
+	/* font-family: "Herr Von Muellerhoff"; */
 }
 .site-description {
-	font-family: "Quattrocento Sans";
+	/* font-family: "Quattrocento Sans"; */
 }
 .entry-title {
-	font-family: "Oswald";
+	/* font-family: "Oswald"; */
 }
 .main-navigation {
-	font-family: "Oswald";
+	/* font-family: "Oswald"; */
 }
 .widget-title {
-	font-family: "Oswald" !important;
+	/* font-family: "Oswald" !important; */
 }
 body {
 	font-size: 14px;
@@ -7866,4 +7866,7 @@ textarea.error {
 }
 .wpcmsdev-toggle .toggle-content > :last-child {
 	margin-bottom: 0 !important;
+}
+* {
+	font-family: Arial, Helvetica, sans-serif;
 }

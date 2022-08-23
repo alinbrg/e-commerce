@@ -13,7 +13,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="product" element={<Product />} />
+					<Route path="/product/:productID" element={<Product />} />
 				</Routes>
 			</BrowserRouter>
 		</QueryClientProvider>

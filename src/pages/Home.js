@@ -1,10 +1,17 @@
 // import Footer from "../components/Footer";
 // import Header from "../components/Header";
+import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
+import apiRequest from "../apiRequest";
 import Page from "../Page";
 
 // archive post-type-archive post-type-archive-product woocommerce woocommerce-page
 
 export default function Home() {
+	const { data } = useQuery("products", () => apiRequest("GET", "products"));
+
+	console.log(data);
+
 	return (
 		<div className="archive post-type-archive post-type-archive-product">
 			<Page>
@@ -30,67 +37,20 @@ export default function Home() {
 									</select>
 								</form>
 								<ul className="products">
-									<li className="first product">
-										<a href="shop-single.html">
-											<span className="onsale">Sale!</span>
-											<img
-												src="https://picsum.photos/520/600?random=1"
-												alt=""
-											/>
-											<h3>Cool Fedora</h3>
-											<span className="price">
-												<span className="amount">$34.00</span>
-											</span>
-										</a>
-										<a href="#" className="button">
-											Add to cart
-										</a>
-									</li>
-									<li className="product">
-										<a href="shop-single.html">
-											<img
-												src="https://picsum.photos/520/600?random=1"
-												alt=""
-											/>
-											<h3>Beige Blouse</h3>
-											<span className="price">
-												<span className="amount">$66.00</span>
-											</span>
-										</a>
-										<a href="#" className="button">
-											Add to cart
-										</a>
-									</li>
-									<li className="product">
-										<a href="shop-single.html">
-											<img
-												src="https://picsum.photos/520/600?random=1"
-												alt=""
-											/>
-											<h3>Black Jacket</h3>
-											<span className="price">
-												<span className="amount">$125.00</span>
-											</span>
-										</a>
-										<a href="#" className="button">
-											Add to cart
-										</a>
-									</li>
-									<li className="last product">
-										<a href="shop-single.html">
-											<img
-												src="https://picsum.photos/520/600?random=1"
-												alt=""
-											/>
-											<h3>Brown Jacket</h3>
-											<span className="price">
-												<span className="amount">$28.00</span>
-											</span>
-										</a>
-										<a href="#" className="button">
-											Add to cart
-										</a>
-									</li>
+									{(data || []).map((item) => (
+										<li key={item.id} className="product">
+											<Link to={`/product/${item.id}`}>
+												<img src={item.image} alt="" />
+												<h3>{item.title}</h3>
+												<span className="price">
+													<span className="amount">${item.price}</span>
+												</span>
+											</Link>
+											<a href="#" className="button">
+												Add to cart
+											</a>
+										</li>
+									))}
 								</ul>
 								<nav className="woocommerce-pagination">
 									<ul className="page-numbers">

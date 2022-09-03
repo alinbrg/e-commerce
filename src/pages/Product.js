@@ -14,7 +14,7 @@ export default function Product() {
 		apiRequest("GET", `products/${productID}`)
 	);
 
-	console.log(data);
+	// console.log(data);
 	if (isLoading) {
 		return <h1>Loading...</h1>;
 	}
@@ -28,7 +28,7 @@ export default function Product() {
 							<div id="container">
 								<div id="content" role="main">
 									<nav className="woocommerce-breadcrumb" itemProp="breadcrumb">
-										<Link to="/">Home</Link>/ Beige Jacket
+										<Link to="/">Home</Link> / {data?.title}
 									</nav>
 									<div
 										itemScope=""

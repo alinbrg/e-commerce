@@ -4,9 +4,7 @@ export default function Header() {
 		<header id="masthead" className="site-header">
 			<div className="site-branding">
 				<h1 className="site-title">
-					<a href="index.html" rel="home">
-						E-Commerce
-					</a>
+					<Link to="/">E-Commerce</Link>
 				</h1>
 				<h2 className="site-description">Shop Site</h2>
 			</div>
@@ -20,9 +18,9 @@ export default function Header() {
 						<li>
 							<Link to="/">Home</Link>
 						</li>
-						<li>
+						{/* <li>
 							<Link to="product">Product</Link>
-						</li>
+						</li> */}
 						{/* <li>
 							<a href="shop.html">Shop</a>
 						</li>

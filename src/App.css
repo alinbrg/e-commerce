@@ -7892,3 +7892,17 @@ textarea.error {
 * {
 	font-family: Arial, Helvetica, sans-serif;
 }
+.search {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.search form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.search input {
+	width: 80%;
+	outline: none;
+}

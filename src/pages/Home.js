@@ -14,7 +14,6 @@ export default function Home() {
 	const { data } = useQuery("products", () =>
 		apiRequest("GET", `products?q=${searchParams.get("search")}`)
 	);
-	// console.log(data);
 	const [searchValue, setSearchValue] = useState("");
 
 	function onSearchSumbit(e) {

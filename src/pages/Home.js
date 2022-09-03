@@ -9,32 +9,30 @@ import Page from "../Page";
 // archive post-type-archive post-type-archive-product woocommerce woocommerce-page
 
 export default function Home() {
-	let [searchParams, setSearchParams] = useSearchParams();
+	// let [searchParams, setSearchParams] = useSearchParams();
 
-	const { data } = useQuery(["products", searchParams.get("search")], () =>
-		apiRequest("GET", `products?q=${searchParams.get("search")}`)
-	);
-	const [searchValue, setSearchValue] = useState("");
+	const { data } = useQuery("products", () => apiRequest("GET", `products`));
+	// const [searchValue, setSearchValue] = useState("");
 
-	function onSearchSumbit(e) {
-		e.preventDefault();
+	// function onSearchSumbit(e) {
+	// 	e.preventDefault();
 
-		// ლინკს დაემატება /?search=searchValue ასეთი რაღაც
-		setSearchParams({
-			search: searchValue,
-		});
-	}
+	// 	// ლინკს დაემატება /?search=searchValue ასეთი რაღაც
+	// 	setSearchParams({
+	// 		search: searchValue,
+	// 	});
+	// }
 
-	useEffect(() => {
-		setSearchValue(searchParams.get("search"));
-	}, []);
+	// useEffect(() => {
+	// 	setSearchValue(searchParams.get("search"));
+	// }, []);
 
 	return (
 		<div className="archive post-type-archive post-type-archive-product">
 			<Page>
 				{
 					<div id="content" className="site-content">
-						<div className="search ">
+						{/* <div className="search ">
 							<form action="" onSubmit={onSearchSumbit}>
 								<input
 									placeholder="search ..."
@@ -44,7 +42,7 @@ export default function Home() {
 								/>
 								<button type="submit">Search</button>
 							</form>
-						</div>
+						</div> */}
 						<div id="primary" className="content-area column full">
 							<main id="main" className="site-main" role="main">
 								<p className="woocommerce-result-count">

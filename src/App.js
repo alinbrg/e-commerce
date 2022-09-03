@@ -5,6 +5,7 @@ import "./App.css";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
+import Search from "./pages/Search";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ function App() {
 					</Route> */}
 					<Route path="/product/:productID" element={<Product />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/search" element={<Search />} />
 				</Routes>
 			</BrowserRouter>
 		</QueryClientProvider>

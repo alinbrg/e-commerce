@@ -7906,3 +7906,6 @@ textarea.error {
 	width: 80%;
 	outline: none;
 }
+.main-navigation a.active {
+	font-weight: bolder;
+}

@@ -11,7 +11,7 @@ import Page from "../Page";
 export default function Home() {
 	let [searchParams, setSearchParams] = useSearchParams();
 
-	const { data } = useQuery("products", () =>
+	const { data } = useQuery(["products", searchParams.get("search")], () =>
 		apiRequest("GET", `products?q=${searchParams.get("search")}`)
 	);
 	const [searchValue, setSearchValue] = useState("");

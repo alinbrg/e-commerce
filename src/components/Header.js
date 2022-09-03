@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 export default function Header() {
 	return (
 		<header id="masthead" className="site-header">
@@ -16,11 +16,21 @@ export default function Header() {
 				<div className="menu-menu-1-container">
 					<ul id="menu-menu-1" className="menu">
 						<li>
-							<Link to="/">Home</Link>
+							<NavLink
+								to="/"
+								className={({ isActive }) => (isActive ? "active" : "")}
+							>
+								Home
+							</NavLink>
 						</li>
-						{/* <li>
-							<Link to="product">Product</Link>
-						</li> */}
+						<li>
+							<NavLink
+								to="/about"
+								className={({ isActive }) => (isActive ? "active" : "")}
+							>
+								About
+							</NavLink>
+						</li>
 						{/* <li>
 							<a href="shop.html">Shop</a>
 						</li>

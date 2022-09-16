@@ -31,14 +31,14 @@ export default function Header() {
 								About
 							</NavLink>
 						</li>
-						<li>
+						{/* <li>
 							<NavLink
 								to="/search"
 								className={({ isActive }) => (isActive ? "active" : "")}
 							>
 								Search
 							</NavLink>
-						</li>
+						</li> */}
 						{/* <li>
 							<a href="shop.html">Shop</a>
 						</li>
